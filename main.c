@@ -166,7 +166,7 @@ int main(int argc, char *argv[]) {
 		if (filter) {
 			printf("Packet match: 0x%lx\n", addr);
 			printf("Code: 0x%x\n", ret.code);
-			printf("Type: 0x%x\n\n", ret.type);
+			printf("Type: 0x%x\n", ret.type);
 			printf("Params: %x %x %x %x\n", ret.param1,
 				ret.param2, ret.param3, ret.param4);
 
@@ -175,7 +175,7 @@ int main(int argc, char *argv[]) {
 					printf("%c:%x  ", (char)ret.data[i], (unsigned char)ret.data[i]);
 				}
 			}
-			puts("---------");
+			puts("\n---------");
 		}
 
 		addr++;
